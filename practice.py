@@ -1,9 +1,7 @@
-n = input().zfill(2)
-m = n[:1] + n[-1:]
-cycle = 0
-while True:
-    m = m[-1:] + str(int(m[:1]) + int(m[-1:]))[-1:]
-    cycle += 1
-    if n == m:
-        break
-print(cycle)
+print('구구단')
+
+for i in range(2,10):
+    print(f'### {i}단 ###')
+    for j in range(1,10):
+        print(i, '*', j, '=', i*j)
+    print('\n')
