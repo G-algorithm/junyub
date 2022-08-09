@@ -8,4 +8,5 @@ for i in range(1, n):
         if lst[i] < lst[j]:
             count[i] = max(count[i], count[j]+1)
 
+
 print(n - max(count))

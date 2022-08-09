@@ -18,7 +18,6 @@ def dfs(dic, s, visited):
             visited[i] = 1
             dfs(dic, i, visited)
     return sum(visited)-1
-visited = [0 for i in range(n+1)]
 
 # bfs 코드
 def bfs(dic, s, visited):

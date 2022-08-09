@@ -5,9 +5,6 @@ n = int(sys.stdin.readline())
 matrix = [0 for x in range(n)]
 for i in range(n):
     matrix[i] = list(map(int, sys.stdin.readline().rstrip()))
-#
-# for i in matrix:
-#     print(i)
 
 count = []
 def bfs(matrix, x, y, visited):
@@ -32,19 +29,16 @@ def bfs(matrix, x, y, visited):
         count.append(cnt)
     return count
 
-
-
-# print('\n# # # # # # # # # # # # # #\n')
 visited = [[0 for _ in range(n)] for _ in range(n)]
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
-#
-# for i in visited:
-#     print(i)
 
 # print('\n# # # # # # # # # # # # # #\n')
 # ans = bfs(matrix, 0, 1, visited)
 # print(ans)
+
+# for i in visited:
+#     print(i)
 
 for i in range(n):
     for j in range(n):
