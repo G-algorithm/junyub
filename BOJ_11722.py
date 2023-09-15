@@ -8,3 +8,6 @@ for i in range(n):
             dp[i] = max(dp[i], dp[j]+1)
 
 print(max(dp))
+
+
+1, 2, 3, 5, 8, 13
